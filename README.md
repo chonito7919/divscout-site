@@ -61,6 +61,14 @@ public_html/
 └── Gemfile              # Ruby dependencies
 ```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Disclaimer
+
+This website is for educational and informational purposes only. The content does not constitute financial advice, investment recommendations, or any form of professional guidance.
+
 ## License
 
-For educational and informational purposes only.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
