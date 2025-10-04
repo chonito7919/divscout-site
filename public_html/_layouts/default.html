@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="{{ '/' | relative_url }}">DivScout</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                <li><a href="https://divscout.app" target="_blank" class="cta-link">Launch App</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DivScout</h3>
+                    <p>SEC dividend data extraction and tracking platform</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://divscout.app" target="_blank">Web Dashboard</a></li>
+                        <li><a href="https://github.com/chonito7919/DivScout" target="_blank">Backend (GitHub)</a></li>
+                        <li><a href="https://github.com/chonito7919/divscout-web" target="_blank">Frontend (GitHub)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <p class="disclaimer">For educational and informational purposes only. Not financial advice.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ 'now' | date: "%Y" }} DivScout. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

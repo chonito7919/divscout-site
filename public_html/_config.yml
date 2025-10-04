@@ -1,0 +1,21 @@
+title: DivScout
+description: SEC dividend data extraction and tracking platform
+url: "https://divscout.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .ruby-version
