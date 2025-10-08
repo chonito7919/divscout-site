@@ -18,6 +18,7 @@ This Jekyll-based static site showcases the DivScout project:
 
 - [DivScout Backend](https://github.com/chonito7919/DivScout) - Python SEC data parser
 - [DivScout Web](https://github.com/chonito7919/divscout-web) - Vanilla JS frontend dashboard
+- [DivScout Site](https://github.com/chonito7919/divscout-site) - Marketing website (this repo)
 
 ## Tech Stack
 
@@ -94,3 +95,13 @@ THIS SOFTWARE IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY. DivScout does 
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+### Why Apache 2.0?
+
+We chose Apache License 2.0 for its:
+- Permissive terms allowing free use, modification, and distribution
+- Business-friendly licensing without restrictive copyleft requirements
+- Explicit patent rights protection
+- Compatibility with most other open source licenses
+
+DivScout's open-source approach ensures transparency in dividend data processing, enables community contributions, and builds trust through code auditability.
