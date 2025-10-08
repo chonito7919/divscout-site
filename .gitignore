@@ -24,3 +24,9 @@ Thumbs.db
 
 # Deployment
 deploy.sh
+
+# Testing
+node_modules/
+playwright-report/
+test-results/
+package-lock.json
