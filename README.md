@@ -1,12 +1,13 @@
 # DivScout.com
 
-Business profile website for DivScout - a dividend tracking platform that extracts and validates dividend data from SEC EDGAR filings.
+Business profile website for DivScout - an open-source dividend tracking platform that extracts and validates dividend data from SEC EDGAR filings using XBRL data.
 
 ## Overview
 
-This is a Jekyll-based static site that showcases the DivScout project, which consists of:
-- **Backend**: Python parser that extracts dividend data from SEC XBRL filings
-- **Frontend**: Web dashboard for browsing and analyzing dividend payment histories
+This Jekyll-based static site showcases the DivScout project:
+- **Backend**: Python 3.8+ parser extracting dividend data from SEC CompanyFacts and Submissions APIs
+- **Frontend**: Vanilla JavaScript dashboard displaying validated dividend histories and statistics
+- **Database**: PostgreSQL storing 14,778 dividend records across 404 companies with 94.7% verification rate
 
 ## Live Sites
 
@@ -20,10 +21,11 @@ This is a Jekyll-based static site that showcases the DivScout project, which co
 
 ## Tech Stack
 
-- Jekyll 4.3
-- HTML5/CSS3
-- Responsive design
+- Jekyll 4.3 static site generator
+- HTML5/CSS3 with responsive design
+- Playwright for end-to-end testing
 - Hosted on Namecheap Stellar
+- Apache 2.0 License
 
 ## Local Development
 
@@ -34,6 +36,18 @@ bundle exec jekyll serve
 ```
 
 Visit `http://localhost:4000` to preview the site.
+
+## Testing
+
+Run end-to-end tests:
+
+```bash
+npm install
+npx playwright install
+npm test
+```
+
+84 tests cover homepage, about page, navigation, and all external links across Chrome, Firefox, Safari, and mobile.
 
 ## Deployment
 
@@ -65,9 +79,17 @@ public_html/
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Project Statistics
+
+- 404 companies tracked across major sectors
+- 14,778 total dividend records processed
+- 14,001 verified dividends (94.7% quality rate)
+- 696 low-confidence entries flagged for review
+- Average 36.6 dividend records per company
+
 ## Disclaimer
 
-This website is for educational and informational purposes only. The content does not constitute financial advice, investment recommendations, or any form of professional guidance.
+THIS SOFTWARE IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY. DivScout does not constitute financial advice, investment recommendations, or professional guidance. Always conduct thorough research and consult qualified financial professionals before making investment decisions.
 
 ## License
 

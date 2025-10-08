@@ -15,17 +15,54 @@ description: Learn about DivScout's mission to provide clean, validated dividend
     <div class="container">
         <div class="about-section">
             <h2>Mission</h2>
-            <p>DivScout aims to provide investors and researchers with reliable, validated dividend payment data extracted directly from official SEC EDGAR filings. By processing XBRL data and applying intelligent quality checks, we create a clean database of historical dividend information.</p>
+            <p>DivScout provides investors and researchers with reliable, validated dividend payment data extracted directly from official SEC EDGAR filings. By processing XBRL data from the CompanyFacts and Submissions APIs and applying intelligent quality checks, we maintain a clean database of historical dividend information across 404 publicly traded companies.</p>
         </div>
 
         <div class="about-section">
-            <h2>Data Quality</h2>
-            <p>Our confidence scoring system evaluates each dividend record based on multiple factors:</p>
+            <h2>Current Statistics</h2>
             <ul>
-                <li>Detection and filtering of annual totals vs. individual payments</li>
-                <li>Validation of payment dates and amounts</li>
-                <li>Identification of potential data quality issues</li>
-                <li>Only high-confidence records (≥0.8 score) displayed by default</li>
+                <li><strong>14,778 total dividend records</strong> processed and stored</li>
+                <li><strong>14,001 verified dividends</strong> (94.7% quality rate)</li>
+                <li><strong>696 low-confidence entries</strong> flagged for review</li>
+                <li><strong>404 companies tracked</strong> across major sectors</li>
+                <li><strong>Average 36.6 dividend records</strong> per company</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Data Quality & Validation</h2>
+            <p>Our confidence scoring system applies penalties based on:</p>
+            <ul>
+                <li>Unusual dividend amounts that deviate from historical patterns</li>
+                <li>Detection of potential annual totals vs. individual payments</li>
+                <li>Missing or incomplete fiscal period metadata</li>
+                <li>Data consistency across multiple SEC filing sources</li>
+            </ul>
+            <p>Only records with confidence scores ≥0.8 are displayed by default in the dashboard.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Technical Architecture</h2>
+            <p>DivScout is built on:</p>
+            <ul>
+                <li><strong>Python 3.8+</strong> for XBRL parsing and data processing</li>
+                <li><strong>PostgreSQL</strong> for reliable data storage</li>
+                <li><strong>Flask REST API</strong> serving validated dividend data</li>
+                <li><strong>SEC EDGAR APIs</strong> with rate-limited, respectful access</li>
+                <li><strong>Automated quality checks</strong> and batch data updates</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Limitations</h2>
+            <p>Important limitations to be aware of:</p>
+            <ul>
+                <li>Does not provide real-time data</li>
+                <li>Cannot predict future dividends</li>
+                <li>Limited to companies with XBRL data in SEC filings</li>
+                <li>No comprehensive handling of special dividends</li>
+                <li>Dividend date accuracy may vary based on source data</li>
+                <li>Historical data only, not suitable for trading decisions</li>
             </ul>
         </div>
 
@@ -38,21 +75,11 @@ description: Learn about DivScout's mission to provide clean, validated dividend
             </ul>
         </div>
 
-        <div class="about-section">
-            <h2>Current Status</h2>
-            <p>DivScout is currently in active development with:</p>
-            <ul>
-                <li>Coverage of select companies (AAPL, JNJ, TGT, and expanding)</li>
-                <li>Historical dividend data from SEC filings</li>
-                <li>Batch-updated data processing</li>
-                <li>Continuous improvements to validation algorithms</li>
-            </ul>
-        </div>
-
         <div class="about-section disclaimer-box">
             <h2>Important Disclaimer</h2>
-            <p><strong>DivScout is for educational and informational purposes only.</strong></p>
-            <p>This platform does not constitute financial advice, investment recommendations, or any form of professional guidance. Always conduct your own research and consult with qualified financial professionals before making investment decisions.</p>
+            <p><strong>THIS SOFTWARE IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY.</strong></p>
+            <p>DivScout does not constitute financial advice, investment recommendations, or any form of professional guidance. The data provided should not be used for making financial decisions. Always conduct your own thorough research and consult with qualified financial professionals before making any investment decisions.</p>
+            <p>While we strive for accuracy, dividend data extracted from SEC filings may contain errors or omissions. Users should verify all information independently.</p>
         </div>
     </div>
 </section>

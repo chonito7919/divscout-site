@@ -29,11 +29,23 @@ Visit `http://localhost:4000` to preview your changes.
 - Comment complex logic
 - Test responsiveness on mobile and desktop
 
+## Testing
+
+Run end-to-end tests before submitting:
+
+```bash
+npm install
+npx playwright install
+npm test
+```
+
+Ensure all 84 tests pass across browsers.
+
 ## Pull Request Process
 
 1. Ensure your code follows the project's style guidelines
 2. Update documentation if you're changing functionality
-3. Test that the site builds without errors
+3. Run tests and verify the site builds without errors
 4. Provide a clear description of your changes
 5. Reference any related issues
 

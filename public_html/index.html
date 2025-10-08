@@ -8,7 +8,7 @@ description: SEC dividend data extraction and tracking platform - clean, validat
     <div class="container">
         <h1>DivScout</h1>
         <p class="tagline">Clean dividend data from SEC filings</p>
-        <p class="subtitle">Extract, validate, and track dividend payments with confidence-scored data from EDGAR XBRL filings</p>
+        <p class="subtitle">Extract, validate, and track dividend payments with confidence-scored data from EDGAR XBRL filings. Tracking 404 companies with 14,778 dividend records (94.7% verified)</p>
         <div class="hero-cta">
             <a href="https://divscout.app" target="_blank" class="btn btn-primary">Launch Dashboard</a>
             <a href="#features" class="btn btn-secondary">Learn More</a>
@@ -34,28 +34,28 @@ description: SEC dividend data extraction and tracking platform - clean, validat
         <h2>Features</h2>
         <div class="feature-grid">
             <div class="feature-card">
-                <h3>🔍 SEC Data Extraction</h3>
-                <p>Automatically processes XBRL JSON from SEC EDGAR API to extract dividend payment information</p>
+                <h3>SEC Data Extraction</h3>
+                <p>Automatically fetches dividend data from SEC EDGAR CompanyFacts and Submissions APIs using XBRL JSON format</p>
             </div>
             <div class="feature-card">
-                <h3>✅ Smart Validation</h3>
-                <p>Applies intelligent confidence scoring to filter out annual totals and detect data quality issues</p>
+                <h3>Intelligent Validation</h3>
+                <p>Confidence scoring system applies penalties for unusual amounts, potential annual totals, and missing metadata</p>
             </div>
             <div class="feature-card">
-                <h3>📊 Clean Database</h3>
-                <p>Stores validated dividend data in PostgreSQL with confidence scores for reliable analysis</p>
+                <h3>Quality-Focused Database</h3>
+                <p>PostgreSQL storage with 94.7% verified dividend records and confidence scores for reliability</p>
             </div>
             <div class="feature-card">
-                <h3>📅 Dividend Calendar</h3>
-                <p>Interactive calendar view showing historical dividend payments across tracked companies</p>
+                <h3>404 Companies Tracked</h3>
+                <p>Comprehensive coverage across major sectors with 14,778 total dividend records and counting</p>
             </div>
             <div class="feature-card">
-                <h3>📈 Company Tracking</h3>
-                <p>Browse companies with filtering and detailed dividend history for each ticker</p>
+                <h3>Rate-Limited API Access</h3>
+                <p>Respectful SEC API integration with proper rate limiting and error handling</p>
             </div>
             <div class="feature-card">
-                <h3>📱 Mobile-First Design</h3>
-                <p>Responsive dashboard that works seamlessly across desktop and mobile devices</p>
+                <h3>Open Source Platform</h3>
+                <p>Apache 2.0 licensed with transparent data processing and quality checks</p>
             </div>
         </div>
     </div>
@@ -68,10 +68,11 @@ description: SEC dividend data extraction and tracking platform - clean, validat
             <div class="tech-section">
                 <h3>Backend</h3>
                 <ul>
-                    <li>Python 3.13 parser</li>
+                    <li>Python 3.8+ XBRL parser</li>
                     <li>Flask REST API</li>
                     <li>PostgreSQL database</li>
-                    <li>SEC EDGAR API integration</li>
+                    <li>SEC EDGAR CompanyFacts API</li>
+                    <li>SEC EDGAR Submissions API</li>
                 </ul>
             </div>
             <div class="tech-section">
@@ -102,23 +103,23 @@ description: SEC dividend data extraction and tracking platform - clean, validat
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Extract</h3>
-                <p>Python parser fetches XBRL data from SEC EDGAR API for target companies</p>
+                <h3>Fetch</h3>
+                <p>Python parser retrieves XBRL JSON data from SEC EDGAR CompanyFacts and Submissions APIs</p>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
                 <h3>Validate</h3>
-                <p>Confidence scoring algorithm filters data and detects potential issues</p>
+                <p>Confidence scoring applies penalties for unusual amounts, annual totals, and missing fiscal metadata</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
                 <h3>Store</h3>
-                <p>Clean, validated dividend records saved to PostgreSQL database</p>
+                <p>Verified dividend records saved to PostgreSQL with quality scores and flagged entries for review</p>
             </div>
             <div class="step">
                 <div class="step-number">4</div>
-                <h3>Display</h3>
-                <p>Web dashboard provides interactive views of dividend histories and statistics</p>
+                <h3>Analyze</h3>
+                <p>Dashboard displays dividend histories, statistics, and calendar views with filtering options</p>
             </div>
         </div>
     </div>
