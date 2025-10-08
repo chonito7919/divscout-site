@@ -10,7 +10,7 @@ test.describe('Navigation', () => {
     // Check nav links exist
     await expect(page.locator('nav >> text=Home')).toBeVisible();
     await expect(page.locator('nav >> text=About')).toBeVisible();
-    await expect(page.locator('nav >> text=Launch App')).toBeVisible();
+    await expect(page.locator('nav >> text=Launch Dashboard')).toBeVisible();
   });
 
   test('should navigate to About page', async ({ page }) => {
